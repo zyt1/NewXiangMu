@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.newxiangmu.activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_login_zhuce"
+        android:src="@mipmap/login_icon"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_below="@+id/iv_login_zhuce"
+        android:padding="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_name"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="请输入账号"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_pwd"
+            android:layout_below="@+id/til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="请输入密码"
+                android:password="true"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:text="登录"
+            android:textSize="25sp"
+            android:layout_below="@+id/til_pwd"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#0F9CCE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:textSize="12sp"
+            android:text="忘记密码？"
+            android:padding="5dp"
+            android:layout_below="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_zhuce"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:text="新用户注册"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>
